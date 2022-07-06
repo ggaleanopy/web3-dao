@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+.main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*font-family: "Courier New", Courier, monospace;*/
+  font-family: 'Work Sans', sans-serif;
+  background-color: #8A8A8A;
+  padding: 4%;
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  background-color: #8A8A8A;
+}
+
+.input {
+  width: 200px;
+  height: 100%;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.image {
+  width: 70%;
+  height: 50%;
+  margin-left: 20%;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.description {
+  line-height: 1;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: blue;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.button2 {
+  border-radius: 4px;
+  background-color: indigo;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 2%;
+  margin-top: 1rem;
+}
+
+.button_circle {
+  /*display:block;*/
+  height: 138px;
+  width: 138px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #EEA302;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  margin-right: 5px;
+}
+
+.button2_circle {
+  /*display:block;*/
+  height: 138px;
+  width: 138px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  background-color: #80D8DA;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  margin-right: 5px;
+  margin-top: 25px;
+}
+
+.button_circle:hover{
+  background-color: #eaeaea;
+}
+
+.button2_circle:hover{
+  background-color: #eaeaea;
+}
+
+.proposalCard {
+  width: fit-content;
+  margin-top: 0.25rem;
+  border: black 2px solid;
+  flex: 1;
+  flex-direction: column;
+}
+
+.flex {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

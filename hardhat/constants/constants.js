@@ -1,0 +1,5 @@
+// Replace the value with your NFT contract address
+const WORLDCUPBALLS_NFT_CONTRACT_ADDRESS =
+  "0x8415EF1e6045199581E7868a1A43b53d77B06DAb";
+
+module.exports = { WORLDCUPBALLS_NFT_CONTRACT_ADDRESS };
