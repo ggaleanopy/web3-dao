@@ -260,20 +260,20 @@ export default function Home() {
           <b>You cannot create or vote on proposals</b>
         </div>
       );
-    } else {
-      return (
-        <div className={styles.container}>
-          <label>Fake NFT Token ID to Purchase: </label>
-          <input
-            placeholder="0"
-            type="number"
-            onChange={(e) => setFakeNftTokenId(e.target.value)}
-          />
-          <button className={styles.button2_circle} onClick={createProposal}>
-            Create
-          </button>
-        </div>
-      );
+    } else { return (
+            <div>
+              <label>Fake NFT Token ID to Purchase: </label>
+              <input
+                placeholder="0"
+                type="number"
+                onChange={(e) => setFakeNftTokenId(e.target.value)}
+              />
+              <div>
+                <button className={styles.button2_circle} onClick={createProposal}>
+                Create
+                </button>
+              </div>
+            </div>);
     }
   }
 
@@ -293,7 +293,7 @@ export default function Home() {
       );
     } else {
       return (
-        <div>
+        <div className={styles.container}>
           {proposals.map((p, index) => (
             <div key={index} className={styles.proposalCard}>
               <p>Proposal ID: {p.proposalId}</p>
